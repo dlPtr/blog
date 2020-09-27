@@ -20,24 +20,23 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="206. 反转链表反转一个单链表。 示例: 12输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL  进阶: 你可以迭代或递归地反转链表。你能否用两种方法解决这道题？">
+  <meta name="description" content="822. 翻转卡片游戏在桌子上有 N 张卡片，每张卡片的正面和背面都写着一个正数（正面与背面上的数有可能不一样）。我们可以先翻转任意张卡片，然后选择其中一张卡片。如果选中的那张卡片背面的数字 X 与任意一张卡片的正面的数字都不同，那么这个数字是我们想要的数字。哪个数是这些想要的数字中最小的数（找到这些数中的最小值）呢？如果没有一个数字符合要求的，输出 0。其中, fronts[i] 和 backs">
 <meta property="og:type" content="article">
-<meta property="og:title" content="206_reverse_linked_list">
-<meta property="og:url" content="http://example.com/2020/09/12/206-reverse-linked-list/index.html">
+<meta property="og:title" content="822-Card Flipping Game">
+<meta property="og:url" content="http://example.com/2020/09/13/822-Card-Flipping-Game/index.html">
 <meta property="og:site_name" content="dlPtr-blog">
-<meta property="og:description" content="206. 反转链表反转一个单链表。 示例: 12输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL  进阶: 你可以迭代或递归地反转链表。你能否用两种方法解决这道题？">
+<meta property="og:description" content="822. 翻转卡片游戏在桌子上有 N 张卡片，每张卡片的正面和背面都写着一个正数（正面与背面上的数有可能不一样）。我们可以先翻转任意张卡片，然后选择其中一张卡片。如果选中的那张卡片背面的数字 X 与任意一张卡片的正面的数字都不同，那么这个数字是我们想要的数字。哪个数是这些想要的数字中最小的数（找到这些数中的最小值）呢？如果没有一个数字符合要求的，输出 0。其中, fronts[i] 和 backs">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-09-12T09:38:27.000Z">
-<meta property="article:modified_time" content="2020-09-15T16:25:46.000Z">
+<meta property="article:published_time" content="2020-09-13T11:29:07.000Z">
+<meta property="article:modified_time" content="2020-09-15T16:25:50.000Z">
 <meta property="article:author" content="dlPtr">
+<meta property="article:tag" content="medium">
 <meta property="article:tag" content="leetcode">
 <meta property="article:tag" content="数据结构&#x2F;算法">
 <meta property="article:tag" content="腾讯题库">
-<meta property="article:tag" content="easy">
-<meta property="article:tag" content="链表">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2020/09/12/206-reverse-linked-list/">
+<link rel="canonical" href="http://example.com/2020/09/13/822-Card-Flipping-Game/">
 
 
 <script id="page-configurations">
@@ -50,7 +49,7 @@
   };
 </script>
 
-  <title>206_reverse_linked_list | dlPtr-blog</title>
+  <title>822-Card Flipping Game | dlPtr-blog</title>
   
 
 
@@ -165,7 +164,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/12/206-reverse-linked-list/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/13/822-Card-Flipping-Game/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -178,7 +177,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          206_reverse_linked_list
+          822-Card Flipping Game
         </h1>
 
         <div class="post-meta">
@@ -188,14 +187,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2020-09-12 17:38:27" itemprop="dateCreated datePublished" datetime="2020-09-12T17:38:27+08:00">2020-09-12</time>
+              <time title="Created: 2020-09-13 19:29:07" itemprop="dateCreated datePublished" datetime="2020-09-13T19:29:07+08:00">2020-09-13</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-09-16 00:25:46" itemprop="dateModified" datetime="2020-09-16T00:25:46+08:00">2020-09-16</time>
+                <time title="Modified: 2020-09-16 00:25:50" itemprop="dateModified" datetime="2020-09-16T00:25:50+08:00">2020-09-16</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -218,25 +217,22 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="206-反转链表"><a href="#206-反转链表" class="headerlink" title="206. 反转链表"></a>206. 反转链表</h3><p>反转一个单链表。</p>
-<p><strong>示例:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL</span><br><span class="line">输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL</span><br></pre></td></tr></table></figure>
+        <h3 id="822-翻转卡片游戏"><a href="#822-翻转卡片游戏" class="headerlink" title="822. 翻转卡片游戏"></a>822. 翻转卡片游戏</h3><p>在桌子上有 N 张卡片，每张卡片的正面和背面都写着一个正数（正面与背面上的数有可能不一样）。<br>我们可以先翻转任意张卡片，然后选择其中一张卡片。<br>如果选中的那张卡片背面的数字 X 与任意一张卡片的正面的数字都不同，那么这个数字是我们想要的数字。<br>哪个数是这些想要的数字中最小的数（找到这些数中的最小值）呢？如果没有一个数字符合要求的，输出 0。<br>其中, fronts[i] 和 backs[i] 分别代表第 i 张卡片的正面和背面的数字。<br>如果我们通过翻转卡片来交换正面与背面上的数，那么当初在正面的数就变成背面的数，背面的数就变成正面的数。</p>
+<p><strong>示例：</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">输入：fronts = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">4</span>,<span class="number">7</span>], backs = [<span class="number">1</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">1</span>,<span class="number">3</span>]</span><br><span class="line">输出：<span class="number">2</span></span><br><span class="line"></span><br><span class="line">解释：</span><br><span class="line">假设我们翻转第二张卡片，那么在正面的数变成了 [<span class="number">1</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">4</span>,<span class="number">7</span>] ， 背面的数变成了 [<span class="number">1</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">1</span>,<span class="number">3</span>]。</span><br><span class="line">接着我们选择第二张卡片，因为现在该卡片的背面的数是 <span class="number">2</span>，<span class="number">2</span> 与任意卡片上正面的数都不同，所以 <span class="number">2</span> 就是我们想要的数字。</span><br></pre></td></tr></table></figure>
 
-<p><strong>进阶:</strong></p>
-<p>你可以迭代或递归地反转链表。你能否用两种方法解决这道题？</p>
 <a id="more"></a>
 
-<h4 id="解法一，遍历："><a href="#解法一，遍历：" class="headerlink" title="解法一，遍历："></a>解法一，遍历：</h4><p>遍历这个链表，将每个节点不停地加入到一个新的链表的头节点之前即可。<br>实现比较简单。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">reverseList</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        ListNode *curr = <span class="literal">NULL</span>;</span><br><span class="line">        ListNode *idx = head;</span><br><span class="line">        ListNode *newHead = <span class="literal">NULL</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (idx != <span class="literal">NULL</span>) &#123;</span><br><span class="line">            <span class="comment">/* 保存当前节点的地址 */</span></span><br><span class="line">            curr = idx;</span><br><span class="line">            <span class="comment">/* idx指针指向下一节点 */</span></span><br><span class="line">            idx = idx-&gt;next;</span><br><span class="line">            <span class="comment">/* 当前节点指向上一节点 */</span></span><br><span class="line">            curr-&gt;next = newHead;</span><br><span class="line">            newHead = curr;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> newHead;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h4 id="解法二，递归："><a href="#解法二，递归：" class="headerlink" title="解法二，递归："></a>解法二，递归：</h4><p>使用递归的方式，reverseList函数会将一个链表原地反转后，返回反转后的链表的头节点。</p>
-<p>那么可以像下面这样写：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">ListNode* <span class="title">reverseList</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (head == <span class="literal">NULL</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">    <span class="keyword">if</span> (head-&gt;next == <span class="literal">NULL</span>)</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">ListNode</span>* <span class="title">newHead</span> = <span class="title">reverseList</span>(<span class="title">head</span> -&gt; <span class="title">next</span>);</span></span><br><span class="line">    head-&gt;next-&gt;next = head;</span><br><span class="line">    head-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line">    <span class="keyword">return</span> newHead;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>可能有些疑惑的是，最后这两行是什么骚操作？</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">head -&gt; next -&gt; next = head;</span><br><span class="line">head -&gt; next = <span class="literal">NULL</span>;</span><br></pre></td></tr></table></figure>
-<p>在调用<code>reverseList</code>之前，<code>head</code>保存了头节点下一个节点<code>p</code>的地址，当<code>reverseList</code>返回之后，这个<code>p</code>节点实际上就是反转后的链表的最后一个节点。所以只要将<code>head</code>放到这个节点后面去就可以实现整个链表的反转了。</p>
-
+<p><strong>提示：</strong></p>
+<ul>
+<li><code>1 &lt;= fronts.length == backs.length &lt;= 1000</code></li>
+<li><code>1 &lt;= fronts[i] &lt;= 2000</code></li>
+<li><code>1 &lt;= backs[i] &lt;= 2000</code></li>
+</ul>
+<h4 id="解法："><a href="#解法：" class="headerlink" title="解法："></a>解法：</h4><p>通过读取题意，可以知道，如果一张卡片的正反面都是同一个数<code>N1</code>的话，那么<code>N1</code>就不可能是题中想要的那个<code>最小数</code>。</p>
+<p>所以第一轮，遍历所有卡片，将所有正反面相同的卡片找出来，把数字记录下来(用std::set)。</p>
+<p>第二轮遍历所有卡片的时候，只要看其正反面的数字是不是在第一轮找出来的那些数字里，排除掉重复的数字，剩下的数字里找出最小的，就是题解。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">flipgame</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; fronts, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; backs)</span> </span>&#123;</span><br><span class="line">        <span class="comment">/* 保存非两面都一致的数字 */</span></span><br><span class="line">        <span class="built_in">unordered_set</span>&lt;<span class="keyword">int</span>&gt; dupNums;</span><br><span class="line">        <span class="keyword">int</span> min = INT_MAX;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> idx = <span class="number">0</span>; idx &lt; fronts.size(); idx++) &#123;</span><br><span class="line">            <span class="comment">/* 正反面相同的数，插入集合 */</span></span><br><span class="line">            <span class="keyword">if</span> (fronts[idx] == backs[idx]) &#123;</span><br><span class="line">                dupNums.insert(fronts[idx]);</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> idx = <span class="number">0</span>; idx &lt; fronts.size(); idx++) &#123;</span><br><span class="line">            <span class="comment">/* 正反面不同的情况下，也要判断之前是否已经插入到了dupNums集合中 */</span></span><br><span class="line">            <span class="keyword">if</span> (dupNums.find(fronts[idx]) == end(dupNums)) &#123;</span><br><span class="line">                min = (fronts[idx] &lt; min) ? fronts[idx] : min;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (backs[idx] != fronts[idx] &amp;&amp; dupNums.find(backs[idx]) == end(dupNums)) &#123;</span><br><span class="line">                min = (backs[idx] &lt; min ? backs[idx] : min);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> (min % INT_MAX);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -245,11 +241,10 @@
 
       <footer class="post-footer">
           <div class="post-tags">
+              <a href="/tags/medium/" rel="tag"># medium</a>
               <a href="/tags/leetcode/" rel="tag"># leetcode</a>
               <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%AE%97%E6%B3%95/" rel="tag"># 数据结构/算法</a>
               <a href="/tags/%E8%85%BE%E8%AE%AF%E9%A2%98%E5%BA%93/" rel="tag"># 腾讯题库</a>
-              <a href="/tags/easy/" rel="tag"># easy</a>
-              <a href="/tags/%E9%93%BE%E8%A1%A8/" rel="tag"># 链表</a>
           </div>
 
         
@@ -258,12 +253,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/09/09/start-now/" rel="prev" title="start now">
-      <i class="fa fa-chevron-left"></i> start now
+    <a href="/2020/09/12/206-reverse-linked-list/" rel="prev" title="206_reverse_linked_list">
+      <i class="fa fa-chevron-left"></i> 206_reverse_linked_list
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/09/13/822-Card-Flipping-Game/" rel="next" title="822-Card Flipping Game">
-      822-Card Flipping Game <i class="fa fa-chevron-right"></i>
+    <a href="/2020/09/16/1376-time-2-inform-all-employees/" rel="next" title="1376_time_2_inform_all_employees">
+      1376_time_2_inform_all_employees <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -323,7 +318,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#206-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8"><span class="nav-number">1.</span> <span class="nav-text">206. 反转链表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A7%A3%E6%B3%95%E4%B8%80%EF%BC%8C%E9%81%8D%E5%8E%86%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">解法一，遍历：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A7%A3%E6%B3%95%E4%BA%8C%EF%BC%8C%E9%80%92%E5%BD%92%EF%BC%9A"><span class="nav-number">1.2.</span> <span class="nav-text">解法二，递归：</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#822-%E7%BF%BB%E8%BD%AC%E5%8D%A1%E7%89%87%E6%B8%B8%E6%88%8F"><span class="nav-number">1.</span> <span class="nav-text">822. 翻转卡片游戏</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A7%A3%E6%B3%95%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">解法：</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
