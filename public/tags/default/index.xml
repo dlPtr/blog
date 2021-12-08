@@ -9,77 +9,14 @@
       <link>http://120.76.102.194/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 08 Dec 2021 00:24:26 +0800</lastBuildDate><atom:link href="http://120.76.102.194/tags/default/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Dec 2021 16:11:24 +0800</lastBuildDate><atom:link href="http://120.76.102.194/tags/default/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hello World</title>
-      <link>http://120.76.102.194/posts/hello-world/</link>
-      <pubDate>Wed, 08 Dec 2021 00:24:26 +0800</pubDate>
+      <title>Yoda-Condition：让代码可读性变差的一种表达式写法属于是</title>
+      <link>http://120.76.102.194/posts/yoda-condition/</link>
+      <pubDate>Wed, 08 Dec 2021 16:11:24 +0800</pubDate>
       
-      <guid>http://120.76.102.194/posts/hello-world/</guid>
-      <description>input desc text here</description>
-    </item>
-    
-    <item>
-      <title>fiooo</title>
-      <link>http://120.76.102.194/posts/foo/</link>
-      <pubDate>Wed, 08 Dec 2021 00:24:26 +0800</pubDate>
-      
-      <guid>http://120.76.102.194/posts/foo/</guid>
-      <description>input desc text here</description>
-    </item>
-    
-    <item>
-      <title>fiooo</title>
-      <link>http://120.76.102.194/posts/foo1/</link>
-      <pubDate>Wed, 08 Dec 2021 00:24:26 +0800</pubDate>
-      
-      <guid>http://120.76.102.194/posts/foo1/</guid>
-      <description>input desc text here</description>
-    </item>
-    
-    <item>
-      <title>fiooo</title>
-      <link>http://120.76.102.194/posts/foo2/</link>
-      <pubDate>Wed, 08 Dec 2021 00:24:26 +0800</pubDate>
-      
-      <guid>http://120.76.102.194/posts/foo2/</guid>
-      <description>input desc text here</description>
-    </item>
-    
-    <item>
-      <title>fiooo</title>
-      <link>http://120.76.102.194/posts/foo3/</link>
-      <pubDate>Wed, 08 Dec 2021 00:24:26 +0800</pubDate>
-      
-      <guid>http://120.76.102.194/posts/foo3/</guid>
-      <description>input desc text here</description>
-    </item>
-    
-    <item>
-      <title>fiooo</title>
-      <link>http://120.76.102.194/posts/foo4/</link>
-      <pubDate>Wed, 08 Dec 2021 00:24:26 +0800</pubDate>
-      
-      <guid>http://120.76.102.194/posts/foo4/</guid>
-      <description>input desc text here</description>
-    </item>
-    
-    <item>
-      <title>fiooo</title>
-      <link>http://120.76.102.194/posts/foo5/</link>
-      <pubDate>Wed, 08 Dec 2021 00:24:26 +0800</pubDate>
-      
-      <guid>http://120.76.102.194/posts/foo5/</guid>
-      <description>input desc text here</description>
-    </item>
-    
-    <item>
-      <title>fiooo</title>
-      <link>http://120.76.102.194/posts/foo6/</link>
-      <pubDate>Wed, 08 Dec 2021 00:24:26 +0800</pubDate>
-      
-      <guid>http://120.76.102.194/posts/foo6/</guid>
-      <description>input desc text here</description>
+      <guid>http://120.76.102.194/posts/yoda-condition/</guid>
+      <description>yoda-尤达大师，是星球大战中的一个角色，喜欢用倒装句说话。</description>
     </item>
     
   </channel>

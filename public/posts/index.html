@@ -152,84 +152,24 @@
 </header>
 
 <article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="http://120.76.102.194/%3Cimage%20path/url%3E" alt="">
+<figure class="entry-cover"><img loading="lazy" src="http://120.76.102.194/pub/imgs/yoda-speak.png" alt="yoda speak">
 </figure>
   <header class="entry-header">
-    <h2>Hello World
+    <h2>Yoda-Condition：让代码可读性变差的一种表达式写法属于是
     </h2>
   </header>
   <section class="entry-content">
-    <p>This is a test md hello hello hey you
-world In china</p>
+    <p>c语言中的yoda-condition写法 大学期间学习c语言时发现过一个问题。
+c语言允许在判断条件中进行赋值，并且以赋值后的变量作为判断条件。 这就导致，c语言初学者(熟练者也偶尔会犯错误)常因为少写一个=号引发逻辑bug，让人怀疑人生。如下：
+int age = 24; // 正确的写法 if (age == 23) { // age == 23为假 } // 误写为 if (age = 23) { // age被赋值为23，导致条件为真 } 错误的分支中，age被赋值为23，非0值作为判断条件为真，故条件成立，进入if分支。
+当时在网上搜索过这个问题，发现有一种写法可以在编译阶段就暴露这个问题，就是将常量放在 = 左边，变量放在右边。这样如果少写了一个 = ，就从关系运算符变成了赋值操作符，静态分析过程中就可以发现此问题。
+if (23 = age) { // 编译阶段会报错 } yoda-condition写法应该被摈弃 今天在用golang写一个demo时，不小心把常量放到了 != 左边，导致go-staticcheck报错： 搜了一下，如今这种常量在左的写法已经不再受推崇了，这等于是牺牲了一部分代码可读性来换取代码逻辑的正确，现在有各种牛逼的插件可以做静态分析，所以感觉已经没必要了。
+而且其实当初我模仿这种写法的时候，确实觉得很别扭，因为我想表达的是年龄等于23，而不是23等于年龄，这和我们阅读习惯不一致。
+为什么叫yoda-condition？ 搜了下才知道，yoda是星球大战中的一个角色-尤达大师。喜欢说倒装句，我们把关系运算符左右的变量和常量互换，就像是用编程语言中的倒装一样。</p>
   </section>
-  <footer class="entry-footer"><span title='2021-12-08 00:24:26 +0800 CST'>December 8, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;robin</footer>
-  <a class="entry-link" aria-label="post link to Hello World" href="http://120.76.102.194/posts/hello-world/"></a>
+  <footer class="entry-footer"><span title='2021-12-08 16:11:24 +0800 CST'>December 8, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;robinx</footer>
+  <a class="entry-link" aria-label="post link to Yoda-Condition：让代码可读性变差的一种表达式写法属于是" href="http://120.76.102.194/posts/yoda-condition/"></a>
 </article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="http://120.76.102.194/%3Cimage%20path/url%3E" alt="">
-</figure>
-  <header class="entry-header">
-    <h2>fiooo
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>This is a test md hello hello hey you
-world In china</p>
-  </section>
-  <footer class="entry-footer"><span title='2021-12-08 00:24:26 +0800 CST'>December 8, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;robin</footer>
-  <a class="entry-link" aria-label="post link to fiooo" href="http://120.76.102.194/posts/foo/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="http://120.76.102.194/%3Cimage%20path/url%3E" alt="">
-</figure>
-  <header class="entry-header">
-    <h2>fiooo
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>This is a test md hello hello hey you
-world In china</p>
-  </section>
-  <footer class="entry-footer"><span title='2021-12-08 00:24:26 +0800 CST'>December 8, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;robin</footer>
-  <a class="entry-link" aria-label="post link to fiooo" href="http://120.76.102.194/posts/foo1/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="http://120.76.102.194/%3Cimage%20path/url%3E" alt="">
-</figure>
-  <header class="entry-header">
-    <h2>fiooo
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>This is a test md hello hello hey you
-world In china</p>
-  </section>
-  <footer class="entry-footer"><span title='2021-12-08 00:24:26 +0800 CST'>December 8, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;robin</footer>
-  <a class="entry-link" aria-label="post link to fiooo" href="http://120.76.102.194/posts/foo2/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="http://120.76.102.194/%3Cimage%20path/url%3E" alt="">
-</figure>
-  <header class="entry-header">
-    <h2>fiooo
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>This is a test md hello hello hey you
-world In china</p>
-  </section>
-  <footer class="entry-footer"><span title='2021-12-08 00:24:26 +0800 CST'>December 8, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;robin</footer>
-  <a class="entry-link" aria-label="post link to fiooo" href="http://120.76.102.194/posts/foo3/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="next" href="http://120.76.102.194/posts/page/2/">Next Page »</a>
-  </nav>
-</footer>
     </main>
     
 <footer class="footer">

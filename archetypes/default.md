@@ -1,10 +1,5 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-# weight: 1
-# aliases: ["/first"]
-
-# author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
 
@@ -24,13 +19,15 @@ author: "robinx"
 
 # TODO
 # weight: 3 # 优先级
-description: "input desc text here"
+title: "{{ replace .Name "-" " " | title }}"
+description: ""
 tags: ["default"]
 categories: ["posts"]
 draft: false
+# weight: 1
 cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
+    image: "http://120.76.102.194/pub/imgs/<modify_here>.png" # image path/url
+    alt: "should have a png here" # alt text
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page

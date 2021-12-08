@@ -9,13 +9,22 @@
       <link>http://120.76.102.194/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 08 Dec 2021 00:24:26 +0800</lastBuildDate><atom:link href="http://120.76.102.194/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Dec 2021 16:11:24 +0800</lastBuildDate><atom:link href="http://120.76.102.194/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>default</title>
-      <link>http://120.76.102.194/tags/default/</link>
-      <pubDate>Wed, 08 Dec 2021 00:24:26 +0800</pubDate>
+      <title>code-style</title>
+      <link>http://120.76.102.194/tags/code-style/</link>
+      <pubDate>Wed, 08 Dec 2021 16:11:24 +0800</pubDate>
       
-      <guid>http://120.76.102.194/tags/default/</guid>
+      <guid>http://120.76.102.194/tags/code-style/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go</title>
+      <link>http://120.76.102.194/tags/go/</link>
+      <pubDate>Wed, 08 Dec 2021 16:11:24 +0800</pubDate>
+      
+      <guid>http://120.76.102.194/tags/go/</guid>
       <description></description>
     </item>
     
