@@ -1,5 +1,5 @@
 baseURL: "http://120.76.102.194"
-title: ""
+title: "Robinx's blog"
 paginate: 5
 theme: PaperMod
 
@@ -90,10 +90,10 @@ params:
         Text: "Suggest Changes" # edit text
         appendFilePath: true # to append file path to Edit link
 
-    # label:
-    #     text: "Home"
-    #     icon: icon.png
-    #     iconHeight: 35
+    label:
+        text: "|"
+        icon: /Creeper.ico #home-32x32.png
+        iconHeight: 35
 
     # analytics:
     #     google:
