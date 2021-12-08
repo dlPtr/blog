@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Robinx&#39;s blog</title>
+    <link>http://120.76.102.194/</link>
+    <description>Recent content on Robinx&#39;s blog</description>
+    <image>
+      <url>http://120.76.102.194/papermod-cover.png</url>
+      <link>http://120.76.102.194/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 08 Dec 2021 16:11:24 +0800</lastBuildDate><atom:link href="http://120.76.102.194/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Yoda-Condition：让代码可读性变差的一种表达式写法属于是</title>
+      <link>http://120.76.102.194/posts/yoda-condition/</link>
+      <pubDate>Wed, 08 Dec 2021 16:11:24 +0800</pubDate>
+      
+      <guid>http://120.76.102.194/posts/yoda-condition/</guid>
+      <description>c语言中的yoda-condition写法 大学期间学习c语言时发现过一个问题。
+c语言允许在判断条件中进行赋值，并且以赋值后的变量作为判断条件。 这就导致，c语言初学者(熟练者也偶尔会犯错误)常因为少写一个=号引发逻辑bug，让人怀疑人生。如下：
+1 2 3 4 5 6 7 8 9 10 11 12  int age = 24; // 正确的写法 if (age == 23) { // age == 23为假 } // 误写为 if (age = 23) { // age被赋值为23，导致条件为真 }   错误的分支中，age被赋值为23，非0值作为判断条件为真，故条件成立，进入if分支。
+当时在网上搜索过这个问题，发现有一种写法可以在编译阶段就暴露这个问题，就是将常量放在 = 左边，变量放在右边。这样如果少写了一个 = ，就从关系运算符变成了赋值操作符，静态分析过程中就可以发现此问题。
+1 2 3  if (23 = age) { // 编译阶段会报错 }   yoda-condition写法应该被摈弃 今天在用golang写一个demo时，不小心把常量放到了 != 左边，导致go-staticcheck报错： 搜了一下，如今这种常量在左的写法已经不再受推崇了，这等于是牺牲了一部分代码可读性来换取代码逻辑的正确，现在有各种牛逼的插件可以做静态分析，所以感觉已经没必要了。</description>
+    </item>
+    
+    
+    
+  </channel>
+</rss>
