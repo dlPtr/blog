@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: http://120.76.102.194/sitemap.xml
