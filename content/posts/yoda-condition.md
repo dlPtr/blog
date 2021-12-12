@@ -19,7 +19,7 @@ author: "robinx"
 # TODO
 # weight: 3 # 优先级
 title: "Yoda-Condition：让代码可读性变差的一种表达式写法属于是"
-tags: ["code-style", "go"]
+tags: ["code-style", "misc"]
 categories: ["posts"]
 draft: false
 # weight: 1
