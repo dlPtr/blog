@@ -22,7 +22,6 @@ title: "Yoda-Condition：让代码可读性变差的一种表达式写法属于�
 tags: ["code-style", "misc"]
 categories: ["misc"]
 draft: false
-# weight: 1
 cover:
     image: "http://120.76.102.194/pub/imgs/yoda-speak.png" # image path/url
     alt: "yoda speak" # alt text
