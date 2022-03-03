@@ -19,7 +19,7 @@ author: "robinx"
 
 # TODO
 # weight: 3 # 优先级
-title: "二分求峰型数组最大值-为什么不要mid-1"
+title: "二分：对于陷入死循环的一种场景的思考"
 description: ""
 tags: ["algo"]
 categories: ["posts"]
