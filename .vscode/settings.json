@@ -1,3 +1,5 @@
 {
-    "markdown-preview-enhanced.imageFolderPath": "/statis/postImages"
+    "pasteImage.basePath": "${projectRoot}/static",
+    "pasteImage.path": "${projectRoot}/static/images",
+    "pasteImage.prefix": "/"
 }

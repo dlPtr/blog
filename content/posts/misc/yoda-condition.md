@@ -23,8 +23,8 @@ tags: ["code-style", "misc"]
 categories: ["misc"]
 draft: false
 cover:
-    image: "http://120.76.102.194/pub/imgs/yoda-speak.png" # image path/url
-    alt: "yoda speak" # alt text
+    # image: "/postImages/yoda-speak.png" # image path/url
+    # alt: "yoda speak" # alt text
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
 
@@ -62,7 +62,8 @@ if (23 = age) {
 
 ## yoda-condition写法应该被摈弃
 今天在用golang写一个demo时，不小心把常量放到了 != 左边，导致go-staticcheck报错：
-![asni](http://120.76.102.194/pub/imgs/yoda-condition-prompt.png)
+
+![hhhh](/images/yoda-speak.png)
 
 搜了一下，如今这种常量在左的写法已经不再受推崇了，这等于是牺牲了一部分代码可读性来换取代码逻辑的正确，现在有各种牛逼的插件可以做静态分析，所以感觉已经没必要了。
 

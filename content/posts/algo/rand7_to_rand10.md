@@ -26,7 +26,7 @@ categories: ["posts"]
 draft: false
 cover:
     image: "http://120.76.102.194/pub/imgs/rand7ToRand10.jpg" # image path/url
-    alt: "should have a png here" # alt text
+    # alt: "should have a png here" # alt text
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page

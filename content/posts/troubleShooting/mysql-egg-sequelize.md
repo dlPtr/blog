@@ -42,17 +42,26 @@ cover:
 数据库 `migration` 成功，`user` 表成功建立，证明实际上是可以成功和 `mysql` 建立连接的。
 在 `npm run dev` 启动项目时，却始终报错：
 
-> WARN 670719 Sequelize Error: Access denied for user 'root'@'localhost' (using password: NO)
+![x](/images/2022-06-16-02-12-14.png)
 
 ## 2. 解决过程
 
-### 2.1 首先想到的是先百度一下
+### 2.1 首先想到的是先谷歌一下
 
-一波
+搜到的一堆都是让开root权限的，登录带参数 `-p` 之类的。
+
+参考官方文档：
+
+![x](/images/2022-06-16-02-15-45.png)
+
+我实际上在 `database/config.json` 里是有配置密码参数的。
+并且 `migration` 也成功了，说明是可以连接的。
+但为什么项目运行起来就会失败呢？
+
 
 ### 2.2 排除法，定位问题是在服务端还是客户端
 
-使用 `mysql-workbench` 指定账号为 `root`，输入密码尝试连接 mysql，成功。
+尝试使用 `mysql-workbench` 指定账号为 `root`，输入密码尝试连接 `mysql`, 成功。
 说明问题应该不在于服务端，远程登录是OK的。
 
 ### 2.3 抓包对比分析
@@ -81,23 +90,20 @@ mysql> show variables like 'have_ssl%';
 ```
 
 
-
 #### 2.3.1 mysql-workbench
 
-![hhhh](/postImgs/1.jpg)
+![x](/images/2022-06-16-02-11-08.png)
 
 #### 2.3.2 egg-sequelize
 
-image.png
+![x](/images/2022-06-16-02-11-36.png)
 
 #### 2.3.3 猜测
 
-没有传 `密码` ，那么猜了一下是不是配置错了？
+确实没有传 `密码` ，那么猜了一下是不是配置错了？
 
 再次打开 `eggjs` 官方文档看了下，竟然有两处需要配置 `mysql` 登录信息。
 一处是：`database/config.json`，这个没问题，我们按照教程去改了：
-
-
 
 也确实生效了，数据库初始化执行成功。
 ```
