@@ -26,8 +26,8 @@ categories: ["posts"]
 draft: false
 # weight: 1
 cover:
-    image: "http://120.76.102.194/pub/imgs/<modify_here>.png" # image path/url
-    alt: "should have a png here" # alt text
+    # image: "http://120.76.102.194/pub/imgs/<modify_here>.png" # image path/url
+    # alt: "should have a png here" # alt text
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
