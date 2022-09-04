@@ -33,7 +33,4 @@ cover:
 
 ---
 
-
-傻逼朱新萍，傻逼余星汐
-
-![](/static/images/2022-09-04-19-44-13.png)
+dawn is comming, open your eyes;
