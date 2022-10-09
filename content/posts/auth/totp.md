@@ -43,7 +43,7 @@ cover:
 常用认证因素有以下三种：
 - 秘密信息（所知）：只有用户知道，其它人不知道的信息，例如密码。
 - 个人物品（所持）：用户持有的私人物品，例如 手机卡、身份证、USB key。
-- 胜利特征（所有）：用户的遗传特征，例如 指纹、虹膜、声纹
+- 身体特征（所有）：用户的遗传特征，例如 指纹、虹膜、声纹。
 
 双因素认证，就是结合两种因素的认证，常见的比如现在许多网站，输入密码之后可能还会要求发送短信验证。
 
@@ -137,9 +137,9 @@ func Truncate(hmacHash) string {
 加入步长是因为从 用户获取密码 到 输入、提交、服务器完成校验 也是需要一定时间的。如果直接用时间戳的话，那么必须在 `1s` 内完成这些操作。加入步长后，只要用户是在 `C1` 区间内完成即可。
 
 ```txt
-0s               30s    30xC1 s          30x(C1+1) s
-|       30s      |......|       30s      |       30s        |
-|------[C1-1]----|......|------[C1]------|------[C1+1]------|
+0s                     30s              30xC1 s                30x(C1+1) s
+|           30s        |................|          30s         |          30s         |
+|--------[C1-1]--------|................|---------[C1]---------|---------[C1+1]-------|
 ```
 
 ### 四、otp密钥传递
@@ -163,24 +163,21 @@ func Truncate(hmacHash) string {
 <table>
     <tr>
         <td colspan=2> 字段 </td>
-        <td colspan=2> 取值 </td>
+        <td colspan=1> 取值 </td>
         <td> 含义 </td>
     </tr>
     <tr >
         <td colspan=2> TYPE </td>
-        <td colspan=2> totp </td>
+        <td colspan=1> totp </td>
         <td> otp类型，取值范围：totp/hotp </td>
     </tr>
     <tr>
         <td colspan=2> LABEL </td>
-        <td colspan=2> ACME:john@example.com </td>
+        <td colspan=1> ACME:john@example.com </td>
         <td> 密钥由谁(ACME)颁发给谁(john@example.com) </td>
     </tr>
     <tr>
-        <td rowspan=6 colspan=2> PARAMETERS </td>
-        <td> key </td>
-        <td> value </td>
-        <td>-</td>
+        <td rowspan=6 colspan=1> PARAMETERS </td>
     </tr>
     <tr>
         <td> secret </td>
